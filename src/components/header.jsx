@@ -5,7 +5,7 @@ export default function Header(){
     return(
         <Fragment>
             <h1>Velkommen til mit portfolie</h1>
-            <img className="hjemikon" src={HjemIkon} alt="hjem-ikon"/>
+            <img className="hjemikon" src={HjemIkon} alt="hjem-ikon" />
         </Fragment>
     )
 }
