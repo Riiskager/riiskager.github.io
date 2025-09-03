@@ -9,7 +9,7 @@ function App() {
   return (
     
     
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "Riiskager.github.io"}>
+    <BrowserRouter>
       
      <Nav />
       <Routes>
