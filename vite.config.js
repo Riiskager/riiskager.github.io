@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
   };
 
   if (command !== "serve") {
-    config.base = "Riiskager.github.io";// 👈 Replace with your repository name
+    config.base = "/Riiskager.github.io/";// 👈 Replace with your repository name
   }
 
   return config;
