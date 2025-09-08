@@ -66,3 +66,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* -- Her kommer styling af overkategorierne -- */
+/* individuel kategoristyling*/
+.top-categories li{
+  display: flex;
+  align-items: center;
+}
+.top-categories{
+  display: flex;
+  gap: 2rem;
+}
+.top-categories img{
+  width: 6rem;
+  height: auto;
+}
