@@ -1,7 +1,7 @@
-import meIcon from '../assets/home.png'
-import grafikIkon from '../assets/Grafik.png'
-import projektIkon from '../assets/projekter.png'
-import SoMeIkon from '../assets/SoMe.png'
+import meIcon from '../assets/omMig.svg'
+import grafikIkon from '../assets/grafik.svg'
+import projektIkon from '../assets/projekt.svg'
+import SoMeIkon from '../assets/SoMe.svg'
 
   
   const categories = [

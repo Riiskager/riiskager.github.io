@@ -32,9 +32,11 @@ export default function TopCat() {
              
         {categories.map((category, index) => ( //categories mappes
         //Det gør den med en liste, som får en key
+        
             <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}>
+                 <h1>{category.name}</h1>
             <img src={category.img} alt={category.name + " icon"} />
-            {category.name}
+           
             </li>
         ))}
         </ul>
