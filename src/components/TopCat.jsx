@@ -59,7 +59,8 @@ export default function TopCat() {
             </li>
         ))}
         </ul>
-        <ul className="subCategory">
+        <ul className="subCategory"
+        style={{ transform: `translateY(-${selectedSubIndex * 6}rem)`}}>
                     {categories[selectedIndex].subs.map((sub, index) => (
         <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}>
             <p>{sub.name}</p>

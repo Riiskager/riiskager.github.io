@@ -1,7 +1,11 @@
+import { Fragment } from "react"
 import TopCat from "./TopCat"
-
+import Header from "./header"
 export default function HomeScreen(){
     return(
-       <TopCat/>
+        <Fragment>
+            <Header />
+            <TopCat/>
+       </Fragment>
     )
 }

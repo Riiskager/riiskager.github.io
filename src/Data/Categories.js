@@ -14,7 +14,8 @@ import placeholder from '../assets/react.svg'
   { name: "SoMe", img: SoMeIkon, 
     subs: [
         {name: "LinkedIn", img: placeholder},
-        {name: "Github", img: placeholder}
+        {name: "Github", img: placeholder},
+        {name: "Instagram", img: placeholder}
     ]
   },
   { name: "Projects", img: projektIkon,
