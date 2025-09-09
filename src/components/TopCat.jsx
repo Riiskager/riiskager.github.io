@@ -1,20 +1,43 @@
 import categories from "../Data/Categories";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function TopCat() {
     const [selectedIndex, SetSelectedIndex] = useState(0)
+    
+    useEffect(() => {
+        function handleKeyDown(e) {
+            if (e.key === "ArrowRight") {
+                SetSelectedIndex((prevIndex) =>
+                prevIndex > 3 -1 ? 0 : prevIndex + 1);
+            } else if (e.key === "ArrowLeft") {
+                SetSelectedIndex((prevIndex) =>
+                prevIndex === 0 ? categories.length -1 : prevIndex -1
+            );
+            }
+        }
+        window.addEventListener("keydown", handleKeyDown);
+
+          return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+    }, []);
 
     //Return functionen looper gennem categories, og mapper dem alle én af gangen
   return (
     //listen laves
-    <ul className="top-categories"> 
-      {categories.map((category, index) => ( //categories mappes
-      //Det gør den med en liste, som får en key
-        <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}> 
-          <img src={category.img} alt={category.name + " icon"} />
-          {category.name}
-        </li>
-      ))}
-    </ul>
+    <div className="carousel">
+        
+        <ul className="top-categories"
+        style={{ transform: `translateX(-${selectedIndex * 10}rem)`}}>
+             
+        {categories.map((category, index) => ( //categories mappes
+        //Det gør den med en liste, som får en key
+            <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}>
+            <img src={category.img} alt={category.name + " icon"} />
+            {category.name}
+            </li>
+        ))}
+        </ul>
+    </div>
   );
 }

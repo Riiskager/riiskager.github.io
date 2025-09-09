@@ -70,13 +70,20 @@ button:focus-visible {
 
 /* -- Her kommer styling af overkategorierne -- */
 /* individuel kategoristyling*/
+.carousel {
+  position: relative;
+  left: 10rem;
+}
+
+
 .top-categories li{
-  display: flex;
+  display: block;
   align-items: center;
 }
 .top-categories{
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
+  transition: transform 0.3s ease;
 }
 .top-categories img{
   width: 6rem;
@@ -84,8 +91,10 @@ button:focus-visible {
   opacity: 0.8;
 }
 /* Hightlightet kategori*/
+
 .top-highlight img{
   width: 7rem;
   height: auto;
   opacity: 1;
 }
+
