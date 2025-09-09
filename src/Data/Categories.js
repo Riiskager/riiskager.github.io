@@ -1,11 +1,10 @@
 import meIcon from '../assets/home.png'
-import someIcon from '../assets/react.svg'
 
   
   const categories = [
   { name: "Me", img: meIcon },
-  { name: "SoMe", img: someIcon },
-  { name: "Projects", img: someIcon },
-  { name: "Grafik", img: someIcon }
+  { name: "SoMe", img: meIcon },
+  { name: "Projects", img: meIcon },
+  { name: "Grafik", img: meIcon }
 ];
 export default categories;

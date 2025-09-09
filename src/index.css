@@ -81,4 +81,11 @@ button:focus-visible {
 .top-categories img{
   width: 6rem;
   height: auto;
+  opacity: 0.8;
+}
+/* Hightlightet kategori*/
+.top-highlight img{
+  width: 7rem;
+  height: auto;
+  opacity: 1;
 }

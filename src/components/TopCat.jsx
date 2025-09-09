@@ -10,7 +10,7 @@ export default function TopCat() {
     <ul className="top-categories"> 
       {categories.map((category, index) => ( //categories mappes
       //Det gør den med en liste, som får en key
-        <li key={index} className="category-item"> 
+        <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}> 
           <img src={category.img} alt={category.name + " icon"} />
           {category.name}
         </li>
