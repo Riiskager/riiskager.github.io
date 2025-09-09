@@ -1,10 +1,10 @@
 import categories from "../Data/Categories";
 import { useState, useEffect } from "react";
 
-export default function TopCat() {
+export default function TopCat() { 
     const [selectedIndex, SetSelectedIndex] = useState(0)
     
-    useEffect(() => {
+    useEffect(() => { //Hvis jeg trykker på en key, og den er ArrowRight, så highlight den i næste index, medmindre index er større end eller = 3, så gå tilbage til nul
         function handleKeyDown(e) {
             if (e.key === "ArrowRight") {
                 SetSelectedIndex((prevIndex) =>
@@ -17,7 +17,7 @@ export default function TopCat() {
         }
         window.addEventListener("keydown", handleKeyDown);
 
-          return () => {
+          return () => { //Fjern event listener når jeg er færdig
       window.removeEventListener("keydown", handleKeyDown);
     };
     }, []);
