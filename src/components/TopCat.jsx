@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 export default function TopCat() { 
     const [selectedIndex, SetSelectedIndex] = useState(0)
     const [selectedSubIndex, SetSelectedSubIndex] = useState(0)
-    
+    const selectedCategory = categories[selectedIndex];
+    const selectedSub = selectedCategory.subs?.[selectedSubIndex];
+
      useEffect(() => { //Hvis jeg trykker på en key, og den er ArrowRight, så highlight den i næste index, medmindre index er større end eller = 3, så gå tilbage til nul
         function handleKeyDown(e) {
             if (e.key === "ArrowDown") {
@@ -42,6 +44,7 @@ export default function TopCat() {
     //Return functionen looper gennem categories, og mapper dem alle én af gangen
   return (
     //listen laves
+    <div className="whole-page">
     <div className="carousel">
         
         <ul className="top-categories"
@@ -67,8 +70,11 @@ export default function TopCat() {
             <img src={sub.img} alt={sub.name + "icon"} />
         </li>
         ))}
-
         </ul>
+       <div className="detail-panel">
+            {selectedSub && selectedSub.component && <selectedSub.component />}
+        </div>
+       </div>
     </div>
   );
 }
