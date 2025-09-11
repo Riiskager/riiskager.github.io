@@ -71,10 +71,11 @@ export default function TopCat() {
         </li>
         ))}
         </ul>
-       <div className="detail-panel">
+      
+       </div>
+        <div className="detail-panel">
             {selectedSub && selectedSub.component && <selectedSub.component />}
         </div>
-       </div>
     </div>
   );
 }

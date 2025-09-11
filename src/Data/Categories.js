@@ -3,13 +3,14 @@ import grafikIkon from '../assets/grafik.svg'
 import projektIkon from '../assets/projekt.svg'
 import SoMeIkon from '../assets/SoMe.svg'
 import placeholder from '../assets/react.svg'
-import AboutMe from '../components/AboutMe'
+import AboutMe from '../sidePanels/AboutMe'
+import Kontakt from '../sidePanels/Kontakt'
   
   const categories = [
   { name: "Me", img: meIcon, 
     subs: [
         {name: "About Me", img: placeholder, component: AboutMe },
-        {name: "Kontakt", img: placeholder}
+        {name: "Kontakt", img: placeholder, component: Kontakt}
     ],     
   },
   { name: "SoMe", img: SoMeIkon, 
