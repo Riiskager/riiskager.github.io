@@ -7,6 +7,10 @@ export default function TopCat() {
     const selectedCategory = categories[selectedIndex];
     const selectedSub = selectedCategory.subs?.[selectedSubIndex];
 
+
+//Ur til toppen af siden
+
+
      useEffect(() => { //Hvis jeg trykker på en key, og den er ArrowRight, så highlight den i næste index, medmindre index er større end eller = 3, så gå tilbage til nul
         function handleKeyDown(e) {
             if (e.key === "ArrowDown") {
@@ -45,37 +49,40 @@ export default function TopCat() {
   return (
     //listen laves
     <div className="whole-page">
-    <div className="carousel">
-        
-        <ul className="top-categories"
-        style={{ transform: `translateX(-${selectedIndex * 10}rem)`}}>
-             
-        {categories.map((category, index) => ( //categories mappes
-        //Det gør den med en liste, som får en key
+        <div className="carousel">
             
-            <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}
-            onClick={() => SetSelectedIndex(index)}>
-            
+            <ul className="top-categories"
+            style={{ transform: `translateX(-${selectedIndex * 10}rem)`}}>
+                
+            {categories.map((category, index) => ( //categories mappes
+            //Det gør den med en liste, som får en key
+                
+                <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}
+                onClick={() => SetSelectedIndex(index)}>
+                
+                
+                <img src={category.img} alt={category.name + " icon"} />
                 <h1>{category.name}</h1>
-            <img src={category.img} alt={category.name + " icon"} />
-            
-            </li>
-        ))}
-        </ul>
-        <ul className="subCategory"
-        style={{ transform: `translateY(-${selectedSubIndex * 6}rem)`}}>
-                    {categories[selectedIndex].subs.map((sub, index) => (
-        <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}>
-            <p>{sub.name}</p>
-            <img src={sub.img} alt={sub.name + "icon"} />
-        </li>
-        ))}
-        </ul>
-      
-       </div>
-        <div className="detail-panel">
-            {selectedSub && selectedSub.component && <selectedSub.component />}
+                </li>
+            ))}
+            </ul>
+            <div key={`subcat-${selectedIndex}`} className="subCategoryWrapper">
+                <ul className="subCategory"
+                style={{ transform: `translateY(-${selectedSubIndex * 6}rem)`}}>
+                            {categories[selectedIndex].subs.map((sub, index) => (
+                <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}>
+                
+                    <img src={sub.img} alt={sub.name + "icon"} />
+                    <p>{sub.name}</p>
+                </li>
+                ))}
+                </ul>
+            </div>
+        
         </div>
+            <div className="detail-panel">
+                {selectedSub && selectedSub.component && <selectedSub.component />}
+            </div>
     </div>
   );
 }

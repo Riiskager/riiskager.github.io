@@ -5,6 +5,9 @@ import SoMeIkon from '../assets/SoMe.svg'
 import placeholder from '../assets/react.svg'
 import AboutMe from '../sidePanels/AboutMe'
 import Kontakt from '../sidePanels/Kontakt'
+import LinkedIn from '../sidePanels/LinkedIn'
+import Github from '../sidePanels/GitHub'
+import Instagram from '../sidePanels/Instagram'
   
   const categories = [
   { name: "Me", img: meIcon, 
@@ -15,9 +18,9 @@ import Kontakt from '../sidePanels/Kontakt'
   },
   { name: "SoMe", img: SoMeIkon, 
     subs: [
-        {name: "LinkedIn", img: placeholder},
-        {name: "Github", img: placeholder},
-        {name: "Instagram", img: placeholder}
+        {name: "LinkedIn", img: placeholder, component: LinkedIn},
+        {name: "Github", img: placeholder, component: Github },
+        {name: "Instagram", img: placeholder, component: Instagram}
     ]
   },
   { name: "Projects", img: projektIkon,
