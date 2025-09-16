@@ -9,6 +9,7 @@ import LinkedIn from '../sidePanels/LinkedIn'
 import Github from '../sidePanels/GitHub'
 import Instagram from '../sidePanels/Instagram'
 import ZeroBuzz from '../sidePanels/ZeroBuzz'
+import Coil from '../sidePanels/Coil'
   
   const categories = [
   { name: "Me", img: meIcon, 
@@ -28,7 +29,7 @@ import ZeroBuzz from '../sidePanels/ZeroBuzz'
      subs: [
         {name: "ZeroBuzz", img: placeholder, component: ZeroBuzz},
         {name: "Steno", img: placeholder},
-        {name: "Coil", img: placeholder},
+        {name: "Coil", img: placeholder, component: Coil},
         {name: "Køkken", img: placeholder}
     ]
    },

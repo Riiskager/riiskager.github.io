@@ -1,5 +1,6 @@
 import ZeroLogo from '../assets/ZerobuzzLogo.png'
 import ZeroBG from '../assets/ZeroBuzzBackground.webp'
+import fejl from '../assets/404ZBB.png'
 
 export default function ZeroBuzz(){
     return(
@@ -17,7 +18,9 @@ export default function ZeroBuzz(){
                     De elementer jeg specifikt fik ansvaret for i designprocessen var bl.a Logoprocessen, design af dåsen, samt forsiden og den tilhørenede animation.
                 </p>
                 <br />
-                
+                <img src={fejl}></img>
+                <p>Projektet var en førstegangsoplevelse med brug af JSON og Javascript, og gav god læreing og erfaring med sprogene <br/>
+                Siden da er glæden for Javascript kun steget!</p>
             </article>
         </div>
     )
