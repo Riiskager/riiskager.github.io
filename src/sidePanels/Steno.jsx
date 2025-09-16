@@ -1,9 +1,22 @@
+import Stenostart from '../assets/Stenostart.jpg'
+import Stenotegn from '../assets/Stenotegn.png'
+
 export default function Steno(){
     return(
         <div className="Steno">
-        <img></img>
+        <img src={Stenostart}></img>
             <article>
-             <p>Her skal der være indsat ting omkring Steno, plus link til hjemmeside</p>
+                <a href='https://angst-steno-eksamen.axelriis.dk/'><h1>Steno Museet</h1></a>
+             <p>Til eksamensprojektet i samarbejde med Steno, skulle der udvikles skærme til en aktuel udstilling på Museet
+                <br />
+                <br />
+                Udstillingen omhandlede angst, og skulle formidles til små børn fra 6-12 års alderen.
+                <br /> Resultatet af gruppeprojektet var en fint 12-tal til alle gruppens medlemmer.
+             </p>
+        <img src={Stenotegn}></img>
+            <p>Programmeringsdelen i projektet er det jeg personligt er allermest stolt over at kunne blære mig med!
+                <br /><br /> Især tegneskærmen, tilegnet at tegne sit monster var en helt vild unik udfordring, og noget jeg er super glad for fungerer!
+            </p>
             </article>
         </div>
     )

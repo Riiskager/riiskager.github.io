@@ -1,5 +1,6 @@
 import categories from "../Data/Categories";
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function TopCat() { 
     const [selectedIndex, SetSelectedIndex] = useState(0)
@@ -52,7 +53,7 @@ export default function TopCat() {
         <div className="carousel">
             
             <ul className="top-categories"
-            style={{ transform: `translateX(-${selectedIndex * 10}rem)`}}>
+            style={{ transform: `translateX(-${selectedIndex * 9}vw)`}}>
                 
             {categories.map((category, index) => ( //categories mappes
             //Det gør den med en liste, som får en key
@@ -68,11 +69,12 @@ export default function TopCat() {
             </ul>
             <div key={`subcat-${selectedIndex}`} className="subCategoryWrapper">
                 <ul className="subCategory"
-                style={{ transform: `translateY(-${selectedSubIndex * 6}rem)`}}>
+                style={{ transform: `translateY(-${selectedSubIndex * 3.5}rem)`}}>
                             {categories[selectedIndex].subs.map((sub, index) => (
                 <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}>
                 
-                    <img src={sub.img} alt={sub.name + "icon"} />
+                    {sub.img && <img src={sub.img} alt={sub.name + " icon"} />}
+                    {sub.icon && <FontAwesomeIcon className="sub-icon" icon={sub.icon} size="2xl" />}
                     <p>{sub.name}</p>
                 </li>
                 ))}

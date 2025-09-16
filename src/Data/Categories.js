@@ -10,9 +10,16 @@ import Github from '../sidePanels/GitHub'
 import Instagram from '../sidePanels/Instagram'
 import ZeroBuzz from '../sidePanels/ZeroBuzz'
 import Coil from '../sidePanels/Coil'
-  
+import Steno from '../sidePanels/Steno'
+import Kogebog from '../sidePanels/Kogebog'
+import ZeroLogo from '../assets/ZeroLogo.png'
+import avatar from '../assets/Aktiv8.png'
+import atklogo from '../assets/ATKlogo.png'
+
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
   const categories = [
-  { name: "Me", img: meIcon, 
+  { name: "Mig", img: meIcon, 
     subs: [
         {name: "About Me", img: placeholder, component: AboutMe },
         {name: "Kontakt", img: placeholder, component: Kontakt}
@@ -20,17 +27,17 @@ import Coil from '../sidePanels/Coil'
   },
   { name: "SoMe", img: SoMeIkon, 
     subs: [
-        {name: "LinkedIn", img: placeholder, component: LinkedIn},
-        {name: "Github", img: placeholder, component: Github },
-        {name: "Instagram", img: placeholder, component: Instagram}
+        {name: "LinkedIn", icon: faLinkedin, component: LinkedIn},
+        {name: "Github", icon: faGithub, component: Github },
+        {name: "Instagram", icon: faInstagram, component: Instagram}
     ]
   },
-  { name: "Projects", img: projektIkon,
+  { name: "Projekter", img: projektIkon,
      subs: [
-        {name: "ZeroBuzz", img: placeholder, component: ZeroBuzz},
-        {name: "Steno", img: placeholder},
+        {name: "ZeroBuzz", img: ZeroLogo, component: ZeroBuzz},
+        {name: "Steno", img: avatar, component: Steno},
         {name: "Coil", img: placeholder, component: Coil},
-        {name: "Køkken", img: placeholder}
+        {name: "Køkken", img: atklogo, component: Kogebog}
     ]
    },
   { name: "Grafik", img: grafikIkon,
