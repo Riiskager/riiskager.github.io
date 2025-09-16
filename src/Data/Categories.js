@@ -15,14 +15,17 @@ import Kogebog from '../sidePanels/Kogebog'
 import ZeroLogo from '../assets/ZeroLogo.png'
 import avatar from '../assets/Aktiv8.png'
 import atklogo from '../assets/ATKlogo.png'
+import emillogo from '../assets/Emillogo.png'
 
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
+
 
   const categories = [
   { name: "Mig", img: meIcon, 
     subs: [
-        {name: "About Me", img: placeholder, component: AboutMe },
-        {name: "Kontakt", img: placeholder, component: Kontakt}
+        {name: "About Me", img: emillogo, component: AboutMe },
+        {name: "Kontakt", icon: faAddressCard, component: Kontakt}
     ],     
   },
   { name: "SoMe", img: SoMeIkon, 
