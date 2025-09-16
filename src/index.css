@@ -28,14 +28,14 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: white;
     background-color: #ffffff;
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: black;
   }
 }
 
@@ -44,7 +44,7 @@ body {
 .Clock{
   display: flex;
   justify-content: space-between;
-  width: 12rem;
+  width: 10rem;
   border: 3px solid white;
    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
   border-radius: 5px;
@@ -164,6 +164,19 @@ body {
   overflow: auto;
   scroll-behavior: smooth;
   box-shadow: -15px -0px 5px hsl(208, 37%, 20%, 0.95);
+  animation: Slide 0.5s ease;
+}
+
+@keyframes Slide {
+  from{
+    opacity: 0.8;
+    right: -1rem;
+  }
+  to{
+    opacity: 1;
+    right: 0rem;
+  }
+  
 }
 .detail-panel img{
   width: 100%;

@@ -80,7 +80,8 @@ export default function TopCat() {
             </div>
         
         </div>
-            <div className="detail-panel">
+            <div key={selectedSub?.name}
+                    className="detail-panel">
                 {selectedSub && selectedSub.component && <selectedSub.component />}
             </div>
     </div>
