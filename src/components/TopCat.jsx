@@ -10,9 +10,6 @@ export default function TopCat() {
     const selectedSub = selectedCategory.subs?.[selectedSubIndex];
 
 
-//Ur til toppen af siden
-
-
      useEffect(() => { //Hvis jeg trykker på en key, og den er ArrowRight, så highlight den i næste index, medmindre index er større end eller = 3, så gå tilbage til nul
         function handleKeyDown(e) {
             if (e.key === "ArrowDown") {
@@ -53,15 +50,15 @@ export default function TopCat() {
     <div className="whole-page">
         <div className="carousel">
             
-            <ul className="top-categories"
+            <ul className="top-categories" //Styrer hvor meget de bliver skubbet med når man vælger en ny overkategori (Problemer alt efter skærmstørrelse)
             style={{ transform: `translateX(-${selectedIndex * 10}vw)`}}>
                 
             {categories.map((category, index) => ( //categories mappes
             //Det gør den med en liste, som får en key
                 
-                <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}
+                <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"} //Hvis kategorien er selected (Index), giv den navnet "top-highlight"
                 onClick={() => {
-                    SetSelectedIndex(index)
+                    SetSelectedIndex(index) //Sørger for at man kan klikke på toppen, og når man gør så genstartet den underkategorierne
                     SetSelectedSubIndex(0)
                 }}>                
                 
@@ -71,13 +68,13 @@ export default function TopCat() {
                 </li>
             ))}
             </ul>
-            <div key={`subcat-${selectedIndex}`} className="subCategoryWrapper">
-                <ul className="subCategory"
+            <div key={`subcat-${selectedIndex}`} className="subCategoryWrapper"> 
+                <ul className="subCategory" //Her er underkategorien! Fremvist kun! hvis den passer til den tilegnede overkategori
                 style={{ transform: `translateY(-${selectedSubIndex * 3.5}rem)`}}>
                             {categories[selectedIndex].subs.map((sub, index) => (
                 <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}
                 onClick={() =>
-                    SetSelectedSubIndex(index)
+                    SetSelectedSubIndex(index) //Man kan klikke på den også
                 }>
                 
                     {sub.img && <img src={sub.img} alt={sub.name + " icon"} />}
@@ -89,7 +86,7 @@ export default function TopCat() {
             </div>
         
         </div>
-            <div key={selectedSub?.name}
+            <div key={selectedSub?.name} //Viser sidepanelet til den tilhørende subkategori :)
                     className="detail-panel">
                 {selectedSub && selectedSub.component && <selectedSub.component />}
             </div>
