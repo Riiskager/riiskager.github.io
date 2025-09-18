@@ -61,12 +61,13 @@ body {
   font-size: larger;
 }
 .top-categories li{
+  position: relative;
   display: block;
   align-items: center;
 }
 .top-categories{
   display: flex;
-  gap: 4%;
+  gap: 5%;
   transition: transform 0.8s ease;
   /* border: 5px solid orange; */
 }
@@ -78,6 +79,9 @@ body {
   margin-bottom: -1.5rem;
 }
 /* Hightlightet kategori*/
+.top-highlight{
+  position: fixed;
+}
 
 .top-highlight img{
   opacity: 1;
@@ -123,6 +127,7 @@ body {
 }
 .subCategory li{
   display: flex;
+  align-items: center;
 }
 
 .sub-highlight{

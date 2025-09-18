@@ -53,13 +53,16 @@ export default function TopCat() {
         <div className="carousel">
             
             <ul className="top-categories"
-            style={{ transform: `translateX(-${selectedIndex * 9}vw)`}}>
+            style={{ transform: `translateX(-${selectedIndex * 10}vw)`}}>
                 
             {categories.map((category, index) => ( //categories mappes
             //Det gør den med en liste, som får en key
                 
                 <li key={index} className= {index === selectedIndex ? "top-highlight" : "category-item"}
-                onClick={() => SetSelectedIndex(index)}>
+                onClick={() => {
+                    SetSelectedIndex(index)
+                    SetSelectedSubIndex(0)
+                }}>                
                 
                 
                 <img src={category.img} alt={category.name + " icon"} />
