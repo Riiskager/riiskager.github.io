@@ -23,9 +23,9 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 
 
   const categories = [
-  { name: "Mig", img: meIcon, 
-    subs: [
-        {name: "About Me", img: emillogo, component: AboutMe },
+  { name: "Mig", img: meIcon, //Overkatekori
+    subs: [ //Subkategori
+        {name: "Omkring mig", img: emillogo, component: AboutMe }, //"component = side-panel"
         {name: "Kontakt", icon: faAddressCard, component: Kontakt}
     ],     
   },
