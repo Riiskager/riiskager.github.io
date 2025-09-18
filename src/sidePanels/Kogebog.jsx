@@ -1,5 +1,5 @@
-import kogebogtop from '../assets/ATKBB.png'
-import kogebogmidt from '../assets/ATKB.png'
+import kogebogtop from '../assets/ATKBB.PNG'
+import kogebogmidt from '../assets/ATKB.PNG'
 
 export default function Kogebog(){
     return(
