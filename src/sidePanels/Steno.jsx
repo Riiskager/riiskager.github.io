@@ -1,5 +1,5 @@
 import Stenostart from '../assets/Stenostart.jpg'
-import Stenotegn from '../assets/Stenotegn.png'
+import Stenotegn from '../assets/StenoTegn.png'
 
 export default function Steno(){
     return(
