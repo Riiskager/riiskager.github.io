@@ -2,6 +2,7 @@ import categories from "../Data/Categories";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 export default function TopCat() { 
     const [selectedIndex, SetSelectedIndex] = useState(0)
     const [selectedSubIndex, SetSelectedSubIndex] = useState(0)
@@ -74,7 +75,10 @@ export default function TopCat() {
                 <ul className="subCategory"
                 style={{ transform: `translateY(-${selectedSubIndex * 3.5}rem)`}}>
                             {categories[selectedIndex].subs.map((sub, index) => (
-                <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}>
+                <li key={index} className={index === selectedSubIndex ? "sub-highlight" : "subCategory-item"}
+                onClick={() =>
+                    SetSelectedSubIndex(index)
+                }>
                 
                     {sub.img && <img src={sub.img} alt={sub.name + " icon"} />}
                     {sub.icon && <FontAwesomeIcon className="sub-icon" icon={sub.icon} size="2xl" />}
