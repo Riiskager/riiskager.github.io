@@ -6,7 +6,7 @@ export default function Steno(){
         <div className="Steno">
         <img src={Stenostart}></img>
             <article>
-                <a href='https://angst-steno-eksamen.axelriis.dk/'><h1>Steno Museet</h1></a>
+                <a href='https://angst-steno-eksamen.axelriis.dk/' target="blank"><h1>Steno Museet</h1></a>
              <p>Til eksamensprojektet i samarbejde med Steno, skulle der udvikles skærme til en aktuel udstilling på Museet
                 <br />
                 <br />

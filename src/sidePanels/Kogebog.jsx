@@ -1,16 +1,16 @@
-import titel from '../assets/CrystalCraft.PNG'
-import coilimg from '../assets/CoilImg1.jpg'
+import top from '../assets/ATKBB.png'
+import midt from '../assets/ATKB.png'
 
 export default function Kogebog(){
     return(
         <div className="Kogebog">
-        <img src={titel}></img>
+        <img src={top}></img>
             <article>
                 <a href="https://alletiders-kogebog.axelriis.dk/" target="blank"><h1>AlleTiders Kogebog</h1></a>
-             <p>Dette projekt var et samarbejde med Multimedie-studerende fra Holland
-                <br/> Noget, der fik samarbejde sat i fokus, især online samarbejde på tværs af landegrænser
+             <p>Dette projekt var et af de første store projekter på 1. semester, da ambitionerne var langt højere end hvad evnerne tilladte
+                <br/> Projektet pressede grænserne for hvad der var muligt, dengang, og gav en indsigt i hvor meget man kan opnå, så længe man er drevet nok
              </p>
-             <img src={coilimg}></img>
+             <img src={midt}></img>
             </article>
         </div>
     )

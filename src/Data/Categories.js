@@ -16,6 +16,7 @@ import ZeroLogo from '../assets/ZeroLogo.png'
 import avatar from '../assets/Aktiv8.png'
 import atklogo from '../assets/ATKlogo.png'
 import emillogo from '../assets/Emillogo.png'
+import Cclogo from '../assets/CClogo.png'
 
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
@@ -39,7 +40,7 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
      subs: [
         {name: "ZeroBuzz", img: ZeroLogo, component: ZeroBuzz},
         {name: "Steno", img: avatar, component: Steno},
-        {name: "Coil", img: placeholder, component: Coil},
+        {name: "Coil", img: Cclogo, component: Coil},
         {name: "Køkken", img: atklogo, component: Kogebog}
     ]
    },

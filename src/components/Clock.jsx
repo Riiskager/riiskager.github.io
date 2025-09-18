@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
+
+
 
 export default function Clock(){
 const [time, setTime] = useState(new Date()); //Opstiller komponent til opdatering af tid, baseret på Datoen
@@ -17,6 +21,7 @@ useEffect(() => {
 return(
     <div className="Clock">
         <p>{date}</p>
+        <p><FontAwesomeIcon icon={faClock} className="clock-icon" /></p>
         <p>{hours}:{minutes}</p>
     </div>
 )
