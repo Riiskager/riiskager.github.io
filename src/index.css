@@ -46,6 +46,19 @@ body {
   font-size: clamp(0.5rem, 1vw, 1rem) /*Clamp gør, at det skallere mere kontrolleret. clamp(minimum, foretrukket, maksimum)*/
 }
 
+/* Startbesked Styling*/
+.guide{
+  position: absolute;
+  display: flex;
+  border-radius: 10px;
+  font-size: small;
+  left: 25%;
+  bottom: 0;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
+
+
 /* -- Her kommer styling af overkategorierne -- */
 /* individuel kategoristyling*/
 .carousel {
@@ -215,4 +228,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+/*Digital grafik styling*/
+.digitalgrafik p{
+  max-width: 20rem;
+}
+.digitalgrafik{
+  justify-items: center;
 }

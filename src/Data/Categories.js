@@ -2,7 +2,6 @@ import meIcon from '../assets/omMig.svg'
 import grafikIkon from '../assets/grafik.svg'
 import projektIkon from '../assets/projekt.svg'
 import SoMeIkon from '../assets/SoMe.svg'
-import placeholder from '../assets/react.svg'
 import AboutMe from '../sidePanels/AboutMe'
 import Kontakt from '../sidePanels/Kontakt'
 import LinkedIn from '../sidePanels/LinkedIn'
@@ -12,6 +11,7 @@ import ZeroBuzz from '../sidePanels/ZeroBuzz'
 import Coil from '../sidePanels/Coil'
 import Steno from '../sidePanels/Steno'
 import Kogebog from '../sidePanels/Kogebog'
+import DigitalGrafik from '../sidePanels/DigitalGrafik'
 import ZeroLogo from '../assets/ZeroLogo.png'
 import avatar from '../assets/Aktiv8.png'
 import atklogo from '../assets/ATKlogo.png'
@@ -41,13 +41,13 @@ import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
         {name: "ZeroBuzz", img: ZeroLogo, component: ZeroBuzz},
         {name: "Steno", img: avatar, component: Steno},
         {name: "Coil", img: Cclogo, component: Coil},
-        {name: "Køkken", img: atklogo, component: Kogebog}
+        {name: "Alletiders", img: atklogo, component: Kogebog}
     ]
    },
   { name: "Grafik", img: grafikIkon,
      subs: [
-        {name: "Grafik1", img: placeholder},
-        {name: "Grafik2", img: placeholder}
+        {name: "Digtial rodebunke", img: grafikIkon, component: DigitalGrafik},
+        //{name: "Tegnebogen", img: grafikIkon}
     ]
   }
 ];
