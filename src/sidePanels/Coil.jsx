@@ -14,6 +14,8 @@ export default function Coil(){
              <p>Under samarbejdet skulle vi udvikle et interaktivt spil, som man kunne spille fysisk
                 <br />
                 Til dette fik vi kodet denne side, og hollænderne fik produceret de fysiske blokke, der skulle til for at spille
+
+                please virk nu plzplzplz
              </p>
             </article>
         </div>
