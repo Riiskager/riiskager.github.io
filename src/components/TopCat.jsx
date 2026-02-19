@@ -104,6 +104,7 @@ export default function TopCat() {
         
         </div>
             <div key={selectedSub?.name} //Viser sidepanelet til den tilhørende subkategori :)
+                    id={selectedSub?.name}
                     className="detail-panel">
                 {selectedSub && selectedSub.component && <selectedSub.component />}
             </div>

@@ -18,7 +18,9 @@ export default function LinkedIn(){
         <div className="LinkedIn">
                     <img src={link} alt='mig'></img>
                     <article>
-                        <h1> <a href="https://www.linkedin.com/in/emil-riisager-axelsen-12443b20b/" target="_blank">LinkedIn</a> </h1>
+                        <h1> <a href="https://www.linkedin.com/in/emil-riisager-axelsen-12443b20b/" target="_blank">LinkedIn</a></h1>
+                        <p>Det er nok mest af tvang, men jeg har den da</p>
+                        <p>Jeg tror du lærer mig bedre at kende ved at læse resten mit portfolio</p>
                     </article>
                 </div>
     )
