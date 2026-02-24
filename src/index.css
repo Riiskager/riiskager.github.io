@@ -122,7 +122,7 @@ body {
   z-index: -1;
   transition: transform 0.8s ease;
   animation: fadeIn 0.8s ease forwards;
-  border: 5px solid blueviolet;
+  /* border: 5px solid blueviolet; */
   cursor: pointer;
   display: flex;
   gap: 2rem;
