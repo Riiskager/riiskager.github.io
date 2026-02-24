@@ -57,7 +57,7 @@ body {
   left: 25%;
   bottom: 0;
   opacity: 0.8;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+  animation: pulsate 1.5s infinite ease-in-out
 }
 
 
