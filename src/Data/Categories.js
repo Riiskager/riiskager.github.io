@@ -1,12 +1,15 @@
 import meIcon from '../assets/omMig.svg'
 import grafikIkon from '../assets/grafik.svg'
 import projektIkon from '../assets/projekt.svg'
-import SoMeIkon from '../assets/SoMe.svg'
+import MailIkon from '../assets/Mailikon.svg'
+import SOME from '../sidePanels/SOME'
 import AboutMe from '../sidePanels/AboutMe'
 import Kontakt from '../sidePanels/Kontakt'
-import LinkedIn from '../sidePanels/LinkedIn'
-import Github from '../sidePanels/GitHub'
-import Instagram from '../sidePanels/Instagram'
+import Kompetencer from '../sidePanels/Kompetencer'
+import Anbefalinger from '../sidePanels/Anbefalinger'
+// import LinkedIn from '../sidePanels/LinkedIn'
+// import Github from '../sidePanels/GitHub'
+// import Instagram from '../sidePanels/Instagram'
 import ZeroBuzz from '../sidePanels/ZeroBuzz'
 import Coil from '../sidePanels/Coil'
 import Steno from '../sidePanels/Steno'
@@ -18,22 +21,25 @@ import atklogo from '../assets/ATKlogo.png'
 import emillogo from '../assets/Emillogo.png'
 import Cclogo from '../assets/CClogo.png'
 
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
+import { faMobileScreenButton, faBrain, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 
   const categories = [
   { name: "Mig", img: meIcon, //Overkatekori
     subs: [ //Subkategori
         {name: "Omkringmig", img: emillogo, component: AboutMe }, //"component = side-panel"
-        {name: "Kontakt", icon: faAddressCard, component: Kontakt}
+        {name: "Kompetencer", icon: faBrain, component: Kompetencer},
+        {name: "Anbefalinger", icon: faThumbsUp, component: Anbefalinger}
     ],     
   },
-  { name: "SoMe", img: SoMeIkon, 
+  { name: "Kontakt", img: MailIkon, 
     subs: [
-        {name: "LinkedIn", icon: faLinkedin, component: LinkedIn},
-        {name: "Github", icon: faGithub, component: Github },
-        {name: "Instagram", icon: faInstagram, component: Instagram}
+        {name: "SOME", icon: faMobileScreenButton, component: SOME},
+        // {name: "LinkedIn", icon: faLinkedin, component: LinkedIn},
+        // {name: "Github", icon: faGithub, component: Github },
+        // {name: "Instagram", icon: faInstagram, component: Instagram},
+        {name: "Kontaktinfo", icon: faAddressCard, component: Kontakt}
     ]
   },
   { name: "Projekter", img: projektIkon,
