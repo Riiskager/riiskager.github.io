@@ -332,7 +332,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
 }
 .Kompetencer img:hover{
    transform:scale(1.03) translateX(-5px);
@@ -345,7 +344,7 @@ body {
 }
 .kompkodning{
   display: block;
-  justify-items: flex-end;
+  justify-items: center;
   text-align: end;
   background-color: hsla(208, 37%, 20%, 0.4);
   padding: 10px;
@@ -353,11 +352,11 @@ body {
   box-shadow: 0px 0px 20px hsl(208, 37%, 20%, 0.95);
   margin-bottom: 40px;
   width: 70%;
- 
+  
 }
 .kompdesign{
   display: block;
-  justify-items: flex-start;
+   justify-items: center;
   text-align: start;
   background-color: hsla(305, 37%, 20%, 0.4);
   padding: 20px;
@@ -370,7 +369,7 @@ body {
 }
 .kompux{
   display: block;
-  justify-items: flex-end;
+   justify-items: center;
   text-align: end;
   background-color: hsla(93, 37%, 20%, 0.4);
   padding: 20px;
@@ -399,6 +398,16 @@ body {
   list-style: none;
 }
 
+.ux{
+  background-color: rgb(45, 172, 51);
+  padding: 2px;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 2px white);
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0, 2);
+}
+.ux:hover{
+ transform:scale(1.03) translateX(-5px);
+}
 
 
 

@@ -44,11 +44,11 @@ function Kompetencer(){
             <section className="kompux">
                 <h1>UX</h1>
                  <ul>
-                <li>Next</li>
-                <li>React</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
+                <li className='ux'>Research</li>
+                <li className='ux'>Brainstorming</li>
+                <li className='ux'>Analyse</li>
+                <li className='ux'>Overblik</li>
+                <li className='ux'>Strategi</li>
                 </ul>
                  <p>
                     UX er for mig, det vigtigste i en designprocess. Hvis ikke man ved hvem kunden er, hvad deres behov er, og hvorfor, så gætter du bare, når du tager beslutninger.
